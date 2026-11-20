@@ -66,11 +66,9 @@ Click any program name below to open its notebook directly in GitHub or your Mar
 | 27 | [Named Entity Recognition using Transformers (BERT)](./Named%20Entity%20Recognition%20using%20Transformers%28BERT%29.ipynb) |
 | 28 | [Machine Translation using MarianMT or T5](./Machine%20Translation%20using%20MarianMT%20or%20T5%20%28Hugging%20Face%29.ipynb) |
 | 29 | [Text Summarization using BART or T5](./Text%20Summarization%20using%20BART%20or%20T5.ipynb) |
-| 30 | Chatbot Development using a Pre-trained Transformer — **not included as a notebook in this ZIP** |
 | 31 | [Automatic Document Classification and Separation using ML](./Automatic%20Document%20Classification%20and%20Separation%20using%20ML.ipynb) |
 | 32 | [Hybrid Probabilistic and FSM-Based Sequence Modeling for Document Boundary Detection](./Hybrid%20Probabilistic%20%2B%20FSM-Based%20Sequence%20Modeling%20for%20document%20boundary%20detection.ipynb) |
 
-> **Note:** The ZIP contains 31 Jupyter notebooks, not 32. Program 30 (Chatbot Development using a Pre-trained Transformer) is listed in the program catalogue but its `.ipynb` file is missing. Add that notebook to this folder and then add its relative link here.
 
 ### 1. NLP Fundamentals and Text Preprocessing
 
