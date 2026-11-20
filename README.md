@@ -1,324 +1,388 @@
-# Natural Language Processing (NLP) – 32 Programs
-
-This repository contains **32 Python implementations of Natural Language Processing (NLP) concepts and applications**, covering fundamental text processing techniques, linguistic analysis, feature extraction, machine learning, deep learning, and transformer-based models.
-
-These programs provide hands-on experience with various NLP techniques and libraries, demonstrating how human language can be processed, analyzed, represented, and understood using Python.
-
----
-
-## About Natural Language Processing
-
-Natural Language Processing (NLP) is a branch of Artificial Intelligence that enables computers to process, analyze, interpret, and generate human language.
-
-Human language is complex because of its grammar, context, ambiguity, vocabulary, and structure. NLP combines computational linguistics, machine learning, and deep learning to enable computers to work with textual and linguistic data.
-
-NLP is widely used in applications such as:
-
-- Chatbots and virtual assistants
-- Sentiment analysis
-- Machine translation
-- Text classification
-- Search engines
-- Information extraction
-- Text summarization
-- Speech and language systems
-- Document processing
-
----
-
-## Technologies and Libraries Used
-
-- **Python** – Programming language
-- **NLTK** – Natural language processing and text analysis
-- **spaCy** – Linguistic processing and entity recognition
-- **Scikit-learn** – Machine learning and text feature extraction
-- **Gensim** – Word embeddings and semantic analysis
-- **NumPy** – Numerical computation
-- **TensorFlow / Keras** – Deep learning models
-- **PyTorch** – Deep learning framework
-- **Hugging Face Transformers** – Pre-trained transformer models
-- **TextBlob** – Text processing and sentiment analysis
-- **VADER** – Sentiment analysis
-- **POT** – Optimal transport computation
-
----
-
-## List of 32 NLP Programs
-
-| S.No. | Program | Concept |
-|---|---|---|
-| 1 | Tokenization of Sentences and Words using NLTK and spaCy | Text Preprocessing |
-| 2 | Stemming and Lemmatization on Sample Text | Text Normalization |
-| 3 | Stop-word Removal from a Document | Text Preprocessing |
-| 4 | Part-of-Speech (POS) Tagging | Linguistic Analysis |
-| 5 | Parsing and Chunking using RegEx and spaCy | Syntax Analysis |
-| 6 | Named Entity Recognition (NER) using spaCy | Entity Recognition |
-| 7 | Coreference Resolution | Linguistic Analysis |
-| 8 | Bag-of-Words (BoW) Vectorization and Representation | Feature Extraction |
-| 9 | TF-IDF Implementation and Comparison with BoW | Feature Extraction |
-| 10 | N-Gram Model Generation | Language Modeling |
-| 11 | Cosine Similarity between Text Documents | Text Similarity |
-| 12 | Word2Vec Word Embeddings using Gensim | Word Embeddings |
-| 13 | GloVe Embeddings Loading and Vector Representation | Word Embeddings |
-| 14 | Text Similarity using Word Mover's Distance (WMD) | Semantic Similarity |
-| 15 | Text Classification using Naïve Bayes/SVM with TF-IDF | Machine Learning |
-| 16 | Sentiment Analysis using TextBlob and VADER | Sentiment Analysis |
-| 17 | Topic Modeling using Latent Dirichlet Allocation (LDA) | Topic Modeling |
-| 18 | Topic Modeling using Latent Semantic Analysis (LSA) | Topic Modeling |
-| 19 | Opinion Mining on Product/Service Reviews | Opinion Mining |
-| 20 | Information Extraction from Structured and Unstructured Documents | Information Extraction |
-| 21 | Information Retrieval System with Ranking using TF-IDF | Information Retrieval |
-| 22 | Sequence Classification using RNN/LSTM | Deep Learning |
-| 23 | Implementing a Basic Attention Mechanism | Deep Learning |
-| 24 | Fine-Tuning BERT for Text Classification using Hugging Face | Transformers |
-| 25 | Sentence Embeddings using BERT and GPT-2 | Transformers |
-| 26 | Text Generation using GPT-2 | Text Generation |
-| 27 | Named Entity Recognition using Transformers (BERT) | Transformers |
-| 28 | Machine Translation using MarianMT or T5 | Machine Translation |
-| 29 | Text Summarization using BART or T5 | Text Summarization |
-| 30 | Chatbot Development using a Pre-trained Transformer | Conversational NLP |
-| 31 | Automatic Document Classification and Separation using ML | Document Classification |
-| 32 | Hybrid Probabilistic and FSM-Based Sequence Modeling for Document Boundary Detection | Sequence Modeling |
-
----
-
-## Detailed Description of Programs
-
-### 1. Tokenization of Sentences and Words using NLTK and spaCy
-
-Demonstrates tokenization using NLTK and spaCy. Tokenization is the process of breaking text into smaller units such as sentences and words for further processing.
-
-**Libraries:** NLTK, spaCy
-
-### 2. Stemming and Lemmatization on Sample Text
-
-Demonstrates stemming and lemmatization. Stemming reduces words to their root form by removing prefixes or suffixes, while lemmatization converts words into their meaningful dictionary forms.
-
-**Library:** NLTK
-
-### 3. Stop-word Removal from a Document
-
-Removes common English stop words such as "the", "is", "and", and "of" from text to help reduce unnecessary words during text processing.
-
-**Library:** NLTK
-
-### 4. Part-of-Speech (POS) Tagging
-
-Assigns grammatical categories to words based on their context in a sentence, including nouns, verbs, adjectives, adverbs, pronouns, and prepositions.
-
-**Library:** NLTK
-
-### 5. Parsing and Chunking using RegEx and spaCy
-
-Demonstrates parsing and chunking using regular expressions and spaCy. Parsing analyzes grammatical structures, while chunking groups related words into meaningful phrases.
-
-**Libraries:** spaCy, RegEx
-
-### 6. Named Entity Recognition (NER) using spaCy
-
-Identifies and classifies named entities such as people, organizations, locations, dates, monetary values, and other entities from text.
-
-**Library:** spaCy
-
-### 7. Coreference Resolution
-
-Identifies expressions in a document that refer to the same entity, such as linking a person's name with pronouns referring to that person.
-
-**Libraries:** spaCy, neuralcoref or similar tools
-
-### 8. Bag-of-Words (BoW) Vectorization and Representation
-
-Converts text documents into numerical vectors based on word occurrence counts. This representation is used as input for various machine learning algorithms.
-
-**Library:** Scikit-learn
-
-### 9. TF-IDF Implementation and Comparison with BoW
-
-Implements Term Frequency-Inverse Document Frequency (TF-IDF) and compares it with Bag-of-Words. TF-IDF assigns weights to words based on their frequency and importance across a collection of documents.
-
-**Library:** Scikit-learn
-
-### 10. N-Gram Model Generation
-
-Generates unigrams, bigrams, and trigrams from a text corpus. Unigrams represent one word, bigrams two consecutive words, and trigrams three consecutive words.
-
-**Libraries:** NLTK, Scikit-learn
-
-### 11. Cosine Similarity between Text Documents
-
-Calculates similarity between text documents by comparing the angle between their numerical vector representations.
-
-**Libraries:** Scikit-learn, NumPy
-
-### 12. Word2Vec Word Embeddings using Gensim
-
-Trains a Word2Vec model on a text corpus to generate numerical word embeddings that capture semantic and contextual relationships between words.
-
-**Library:** Gensim
-
-### 13. GloVe Embeddings Loading and Vector Representation
-
-Loads pre-trained GloVe embeddings and represents words as numerical vectors that capture semantic relationships based on their usage in a large text corpus.
-
-**Library:** Gensim
-
-### 14. Text Similarity using Word Mover's Distance (WMD)
-
-Calculates semantic similarity between documents using Word Mover's Distance, which measures the distance required to transform one word distribution into another.
-
-**Libraries:** Gensim, POT
-
-### 15. Text Classification using Naïve Bayes/SVM with TF-IDF
-
-Classifies text documents into predefined categories using machine learning algorithms such as Naïve Bayes or Support Vector Machine (SVM) with TF-IDF feature extraction.
-
-**Library:** Scikit-learn
-
-### 16. Sentiment Analysis using TextBlob and VADER
-
-Analyzes textual data to determine whether the sentiment is positive, negative, or neutral and calculates sentiment scores.
-
-**Libraries:** TextBlob, VADER Sentiment
-
-### 17. Topic Modeling using Latent Dirichlet Allocation (LDA)
-
-Applies Latent Dirichlet Allocation to discover hidden topics in a collection of documents by identifying groups of related words.
-
-**Library:** Scikit-learn
-
-### 18. Topic Modeling using Latent Semantic Analysis (LSA)
-
-Uses Latent Semantic Analysis with Singular Value Decomposition (SVD) to identify underlying semantic patterns and relationships in textual data.
-
-**Libraries:** Scikit-learn, NumPy
-
-### 19. Opinion Mining on Product/Service Reviews
-
-Analyzes product or service reviews to extract opinions and determine whether customer feedback is positive, negative, or neutral.
-
-**Libraries:** TextBlob, NLTK
-
-### 20. Information Extraction from Structured and Unstructured Documents
-
-Extracts useful information such as names, organizations, locations, dates, and other relevant entities from structured and unstructured textual data.
-
-**Libraries:** spaCy, Regular Expressions
-
-### 21. Information Retrieval System with Ranking using TF-IDF
-
-Implements an information retrieval system that searches documents based on user queries and ranks results using TF-IDF and cosine similarity.
-
-**Library:** Scikit-learn
-
-### 22. Sequence Classification using RNN/LSTM
-
-Demonstrates sequence classification using Recurrent Neural Networks (RNN) or Long Short-Term Memory (LSTM) networks to learn patterns in sequential textual data.
-
-**Libraries:** TensorFlow, Keras
-
-### 23. Implementing a Basic Attention Mechanism
-
-Implements a basic attention mechanism that enables neural networks to focus on relevant parts of an input sequence during processing.
-
-**Libraries:** TensorFlow, Keras
-
-### 24. Fine-Tuning BERT for Text Classification using Hugging Face
-
-Demonstrates fine-tuning a pre-trained BERT model for text classification by adapting the model to a specific task using labeled data.
-
-**Libraries:** Hugging Face Transformers, PyTorch
-
-### 25. Sentence Embeddings using BERT and GPT-2
-
-Generates numerical representations of sentences using pre-trained BERT and GPT-2 models for semantic representation and similarity-related tasks.
-
-**Libraries:** Hugging Face Transformers, PyTorch
-
-### 26. Text Generation using GPT-2
-
-Demonstrates text generation using the pre-trained GPT-2 language model, which generates additional text based on a given input prompt.
-
-**Library:** Hugging Face Transformers
-
-### 27. Named Entity Recognition using Transformers (BERT)
-
-Performs named entity recognition using a pre-trained transformer model based on BERT to identify entities such as person names, organizations, and locations.
-
-**Library:** Hugging Face Transformers
-
-### 28. Machine Translation using MarianMT or T5
-
-Demonstrates machine translation using pre-trained transformer models such as MarianMT or T5 to convert text from one language to another.
-
-**Library:** Hugging Face Transformers
-
-### 29. Text Summarization using BART or T5
-
-Performs automatic text summarization using transformer models such as BART or T5 to generate concise versions of documents while preserving their important information.
-
-**Library:** Hugging Face Transformers
-
-### 30. Chatbot Development using a Pre-trained Transformer
-
-Demonstrates chatbot development using a pre-trained conversational transformer such as DialoGPT to generate responses based on user input.
-
-**Library:** Hugging Face Transformers
-
-### 31. Automatic Document Classification and Separation using ML
-
-Classifies documents into predefined categories using machine learning techniques and organizes or separates documents according to their predicted category.
-
-**Libraries:** Scikit-learn, NumPy
-
-### 32. Hybrid Probabilistic and FSM-Based Sequence Modeling for Document Boundary Detection
-
-Demonstrates document boundary detection using probabilistic techniques combined with a Finite State Machine (FSM). It identifies document sections or boundaries using textual patterns and state-transition rules.
-
-**Libraries:** Python, Regular Expressions
-
----
-
-## Learning Objectives
-
-The primary learning objectives of these 32 NLP programs are:
-
-- **Text Preprocessing:** Learn tokenization, stemming, lemmatization, stop-word removal, and text normalization.
-- **Linguistic Analysis:** Understand POS tagging, parsing, chunking, named entity recognition, and coreference resolution.
-- **Text Representation:** Explore Bag-of-Words, TF-IDF, N-Grams, Word2Vec, and GloVe.
-- **Text Similarity:** Understand cosine similarity and Word Mover's Distance.
-- **Machine Learning:** Implement text classification, opinion mining, sentiment analysis, and information retrieval.
-- **Topic Modeling:** Explore LDA and LSA for discovering topics in textual data.
-- **Deep Learning:** Learn sequence classification, RNN, LSTM, and attention mechanisms.
-- **Transformer Models:** Explore BERT, GPT-2, MarianMT, BART, and T5.
-- **Practical Applications:** Develop understanding of chatbots, document classification, translation, summarization, and document boundary detection.
-
----
-
-## How to Run the Programs
-
-1. Clone or download this repository.
-2. Open the required `.ipynb` notebook using Google Colab, Jupyter Notebook, or VS Code.
-3. Install the required Python libraries.
-4. Download any required datasets or pre-trained language models.
-5. Execute the notebook cells sequentially.
-6. Observe the outputs and results of each program.
-
----
-
-## Programming Language
-
-**Python**
-
-## Environment
-
-**Jupyter Notebook / Google Colab / VS Code**
-
----
+# Natural Language Processing (NLP) Experiments
+
+A collection of **Natural Language Processing (NLP) practicals**
+implemented in Python. The experiments cover text preprocessing,
+numerical text representation, word embeddings, text similarity, machine
+learning, sequence modeling, and Transformer-based NLP applications.
+
+The notebooks use tools and libraries including **NLTK, spaCy,
+scikit-learn, Gensim, TextBlob, VADER, TensorFlow, PyTorch, and Hugging
+Face Transformers**. They are intended for learning and experimentation
+in Jupyter Notebook or Google Colab.
+
+## Table of Contents
+
+-   [Experiments Included](#experiments-included)
+-   [Technologies and Libraries](#technologies-and-libraries)
+-   [Getting Started](#getting-started)
+-   [Running the Notebooks](#running-the-notebooks)
+-   [Learning Outcomes](#learning-outcomes)
+-   [Important Notes](#important-notes)
+-   [Author](#author)
+-   [License](#license)
+
+## Experiments Included
+
+The three supplied README files contain **31 distinct experiment
+descriptions** after removing repeated entries. The source files refer
+to a 32-practical collection, but one distinct experiment is not
+identifiable from the supplied descriptions. The catalogue below
+includes every distinct experiment described in those files without
+inventing a missing program.
+
+
+## Quick Links to the 32 Programs
+
+Click any program name below to open its notebook directly in GitHub or your Markdown viewer.
+
+| No. | Program (click to open) |
+|---:|---|
+| 1 | [Tokenization of Sentences and Words using NLTK and spaCy](./Tokenization.ipynb) |
+| 2 | [Stemming and Lemmatization on Sample Text](./Stemming_and_Lemmatization.ipynb) |
+| 3 | [Stop-word Removal from a Document](./Stop_word_Removal.ipynb) |
+| 4 | [Part-of-Speech (POS) Tagging](./Part_of_Speech_%28POS%29_Tagging.ipynb) |
+| 5 | [Parsing and Chunking using RegEx and spaCy](./Parsing_and_Chunking.ipynb) |
+| 6 | [Named Entity Recognition (NER) using spaCy](./Named_Entity_Recognition.ipynb) |
+| 7 | [Coreference Resolution](./Coreference_Resolution_using_neuralcoref.ipynb) |
+| 8 | [Bag-of-Words (BoW) Vectorization and Representation](./Bag_of_Words_%28BoW%29.ipynb) |
+| 9 | [TF-IDF Implementation and Comparison with BoW](./TF_IDF_Implementation_and_Comparison.ipynb) |
+| 10 | [N-Gram Model Generation](./N_Gram_Model_%28Uni_%2C_Bi_%2C_Tri_gram%29.ipynb) |
+| 11 | [Cosine Similarity between Text Documents](./Cosine_Similarity_Computation.ipynb) |
+| 12 | [Word2Vec Word Embeddings using Gensim](./Word2Vec_Word_Embeddings_using_Gensim_on_a_Custom_Corpus.ipynb) |
+| 13 | [GloVe Embeddings Loading and Vector Representation](./GloVe_Embeddings_Loading_and_Vector_Representation.ipynb) |
+| 14 | [Text Similarity using Word Mover's Distance (WMD)](./Text_Similarity_using_Word_Mover%27s_Distance_%28WMD%29.ipynb) |
+| 15 | [Text Classification using Naïve Bayes/SVM with TF-IDF](./Text_Classification_using_Na%C3%AFve_Bayes_SVM_with_TF_IDF.ipynb) |
+| 16 | [Sentiment Analysis using TextBlob and VADER](./Sentiment_Analysis_using_TextBlob_and_VADER.ipynb) |
+| 17 | [Topic Modeling using Latent Dirichlet Allocation (LDA)](./Topic_Modeling_using_Latent_Dirichlet_Allocation_%28LDA%29.ipynb) |
+| 18 | [Topic Modeling using Latent Semantic Analysis (LSA)](./Topic_Modeling_using_Latent_Semantic_Analysis_%28LSA%29.ipynb) |
+| 19 | [Opinion Mining on Product/Service Reviews](./Opinion_mining_on_product_service_reviews_dataset.ipynb) |
+| 20 | [Information Extraction from Structured and Unstructured Documents](./Information_Extraction_%28IE%29_from_Structured_Unstructured_Documents.ipynb) |
+| 21 | [Information Retrieval System with Ranking using TF-IDF](./Information%20Retrieval%20System%20with%20Ranking%20using%20TF-IDF.ipynb) |
+| 22 | [Sequence Classification using RNN/LSTM](./Sequence_Classification_using_RNN_LSTM_%28Keras_TensorFlow%29.ipynb) |
+| 23 | [Implementing a Basic Attention Mechanism](./Implementing_Attention_Mechanism_%28Basic_custom_model%29.ipynb) |
+| 24 | [Fine-Tuning BERT for Text Classification using Hugging Face](./Fine_Tuning_BERT_for_text_classification_using_Hugging_Face.ipynb) |
+| 25 | [Sentence Embeddings using BERT and GPT-2](./Sentence_Embeddings_using_BERT_and_GPT_2.ipynb) |
+| 26 | [Text Generation using GPT-2](./Text_Generation_using_GPT_2_on_a_custom_dataset.ipynb) |
+| 27 | [Named Entity Recognition using Transformers (BERT)](./Named%20Entity%20Recognition%20using%20Transformers%28BERT%29.ipynb) |
+| 28 | [Machine Translation using MarianMT or T5](./Machine%20Translation%20using%20MarianMT%20or%20T5%20%28Hugging%20Face%29.ipynb) |
+| 29 | [Text Summarization using BART or T5](./Text%20Summarization%20using%20BART%20or%20T5.ipynb) |
+| 30 | Chatbot Development using a Pre-trained Transformer — **not included as a notebook in this ZIP** |
+| 31 | [Automatic Document Classification and Separation using ML](./Automatic%20Document%20Classification%20and%20Separation%20using%20ML.ipynb) |
+| 32 | [Hybrid Probabilistic and FSM-Based Sequence Modeling for Document Boundary Detection](./Hybrid%20Probabilistic%20%2B%20FSM-Based%20Sequence%20Modeling%20for%20document%20boundary%20detection.ipynb) |
+
+> **Note:** The ZIP contains 31 Jupyter notebooks, not 32. Program 30 (Chatbot Development using a Pre-trained Transformer) is listed in the program catalogue but its `.ipynb` file is missing. Add that notebook to this folder and then add its relative link here.
+
+### 1. NLP Fundamentals and Text Preprocessing
+
+  -----------------------------------------------------------------------------
+                           No. Experiment            Description
+  ---------------------------- --------------------- --------------------------
+                            01 Tokenization of       Splits input text into
+                               Sentences and Words   sentences and individual
+                                                     words using NLTK and
+                                                     spaCy.
+
+                            02 Stemming and          Compares stemming with
+                               Lemmatization         lemmatization to reduce
+                                                     words to root-like or
+                                                     meaningful base forms.
+
+                            03 Stop-word Removal     Removes commonly occurring
+                                                     English stop words from
+                                                     text using NLTK.
+
+                            04 Part-of-Speech        Assigns grammatical labels
+                               Tagging               such as noun, verb,
+                                                     adjective, adverb, and
+                                                     determiner to words.
+
+                            05 Parsing and Chunking  Demonstrates
+                               using RegEx and spaCy regular-expression-based
+                                                     chunking, dependency
+                                                     parsing, and noun-chunk
+                                                     extraction.
+
+                            06 Named Entity          Identifies entities such
+                               Recognition           as people, organizations,
+                                                     locations, and dates using
+                                                     spaCy.
+  -----------------------------------------------------------------------------
+
+### 2. Text Representation, Similarity, and Embeddings
+
+  ------------------------------------------------------------------------
+                           No. Experiment            Description
+  ---------------------------- --------------------- ---------------------
+                            07 Bag-of-Words (BoW)    Converts documents
+                               Vectorization and     into numerical
+                               Representation        vectors based on word
+                                                     frequency using
+                                                     CountVectorizer.
+
+                            08 TF-IDF Implementation Implements TF-IDF and
+                               and Comparison with   compares its
+                               BoW                   representation with
+                                                     Bag-of-Words.
+
+                            09 N-Gram Model          Generates unigram,
+                               Generation            bigram, and trigram
+                                                     sequences from a text
+                                                     corpus.
+
+                            10 Cosine Similarity     Converts documents
+                               between Text          into TF-IDF vectors
+                               Documents             and measures their
+                                                     cosine similarity.
+
+                            11 Word2Vec Embeddings   Creates word
+                                                     embeddings using
+                                                     Gensim on a custom
+                                                     corpus.
+
+                            12 GloVe Embeddings      Loads GloVe
+                                                     embeddings and
+                                                     represents words as
+                                                     vectors.
+
+                            13 Text Similarity using Measures semantic
+                               Word Mover's Distance similarity between
+                               (WMD)                 text documents using
+                                                     Word Mover's
+                                                     Distance.
+  ------------------------------------------------------------------------
+
+### 3. Machine Learning and Text Analysis
+
+  ------------------------------------------------------------------------
+                           No. Experiment            Description
+  ---------------------------- --------------------- ---------------------
+                            14 Text Classification   Performs text
+                               using Naive Bayes and classification using
+                               SVM with TF-IDF       Naive Bayes, SVM, and
+                                                     TF-IDF features.
+
+                            15 Sentiment Analysis    Analyzes the
+                               using TextBlob and    sentiment expressed
+                               VADER                 in text using
+                                                     TextBlob and VADER.
+
+                            16 Topic Modeling using  Discovers latent
+                               Latent Dirichlet      topics in a document
+                               Allocation (LDA)      collection using LDA.
+
+                            17 Topic Modeling using  Explores topic
+                               Latent Semantic       structure using
+                               Analysis (LSA)        Latent Semantic
+                                                     Analysis.
+
+                            18 Opinion Mining on     Analyzes opinions
+                               Product and Service   expressed in product
+                               Reviews               and service reviews.
+
+                            19 Information           Extracts relevant
+                               Extraction from       information from
+                               Structured and        structured and
+                               Unstructured          unstructured document
+                               Documents             content.
+
+                            20 Information Retrieval Builds a document
+                               System with TF-IDF    retrieval system that
+                               Ranking               ranks results using
+                                                     TF-IDF.
+
+                            21 Sequence              Demonstrates sequence
+                               Classification using  classification with
+                               RNN and LSTM          RNN and LSTM models
+                                                     using Keras and
+                                                     TensorFlow.
+
+                            22 Implementing an       Implements a basic
+                               Attention Mechanism   custom attention
+                                                     mechanism.
+  ------------------------------------------------------------------------
+
+### 4. Transformer-Based and Advanced NLP
+
+  ------------------------------------------------------------------------
+                           No. Experiment            Description
+  ---------------------------- --------------------- ---------------------
+                            23 Fine-Tuning BERT for  Fine-tunes a
+                               Text Classification   pretrained BERT model
+                                                     for text
+                                                     classification using
+                                                     Hugging Face.
+
+                            24 Sentence Embeddings   Generates sentence
+                               using BERT and GPT-2  representations using
+                                                     Transformer-based
+                                                     models.
+
+                            25 Text Generation using Generates text using
+                               GPT-2                 GPT-2 on a custom
+                                                     dataset.
+
+                            26 Named Entity          Identifies entities
+                               Recognition using     such as names,
+                               Transformers (BERT)   locations, and
+                                                     organizations using a
+                                                     Transformer-based
+                                                     model.
+
+                            27 Machine Translation   Performs machine
+                               using MarianMT or T5  translation using
+                                                     pretrained Hugging
+                                                     Face models.
+
+                            28 Text Summarization    Generates concise
+                               using BART or T5      summaries from longer
+                                                     text documents.
+
+                            29 Text Summarization    Explores an
+                               using BART or T5      additional
+                                                     implementation of
+                                                     Transformer-based
+                                                     text summarization.
+
+                            30 Automatic Document    Classifies documents
+                               Classification and    and separates them
+                               Separation using ML   into categories using
+                                                     machine learning.
+
+                            31 Hybrid                Combines
+                               Probabilistic +       probabilistic methods
+                               FSM-Based Sequence    and Finite State
+                               Modeling              Machines (FSM) for
+                                                     document-boundary
+                                                     detection and
+                                                     sequence modeling.
+  ------------------------------------------------------------------------
+
+> **Catalogue note:** The source README for the advanced experiments
+> labels these final nine entries as 24--32. The consolidated catalogue
+> renumbers the distinct descriptions sequentially. The supplied files
+> do not provide a separate description for a 32nd unique experiment
+> beyond the hybrid probabilistic + FSM-based sequence-modeling entry.
+
+## Technologies and Libraries
+
+The experiments use the following tools and libraries, depending on the
+notebook:
+
+-   **Language:** Python
+-   **Notebook environments:** Jupyter Notebook, Google Colab
+-   **NLP:** NLTK, spaCy, TextBlob, VADER Sentiment
+-   **Machine Learning:** scikit-learn
+-   **Numerical and data processing:** NumPy, pandas
+-   **Word embeddings:** Gensim, Word2Vec, GloVe
+-   **Deep Learning:** TensorFlow, Keras, PyTorch
+-   **Transformers and pretrained models:** Hugging Face Transformers,
+    BERT, GPT-2, BART, T5, MarianMT
+-   **Visualization:** Matplotlib
+
+## Getting Started
+
+### 1. Clone the repository
+
+``` bash
+git clone <your-repository-url>
+cd <your-repository-folder>
+```
+
+Replace the placeholders with your actual GitHub repository URL and
+local folder name.
+
+### 2. Create a virtual environment (recommended)
+
+``` bash
+python -m venv .venv
+```
+
+Activate it:
+
+**Windows**
+
+``` bash
+.venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+``` bash
+source .venv/bin/activate
+```
+
+### 3. Install the commonly used dependencies
+
+``` bash
+pip install jupyter numpy pandas scikit-learn nltk spacy gensim textblob vaderSentiment matplotlib tensorflow torch transformers sentencepiece
+```
+
+Some notebooks may require additional packages, datasets, pretrained
+embeddings, language resources, or model-specific dependencies. Refer to
+the setup cells and instructions in the relevant notebook.
+
+### 4. Launch Jupyter Notebook
+
+``` bash
+jupyter notebook
+```
+
+Alternatively, open the repository in JupyterLab or upload the notebooks
+to Google Colab.
+
+## Running the Notebooks
+
+1.  Open the notebook for the experiment you want to run (`.ipynb`).
+2.  Read its introductory notes and check for dataset or model
+    requirements.
+3.  Install any notebook-specific dependencies.
+4.  Configure dataset paths or other environment-specific settings where
+    needed.
+5.  Run the cells sequentially.
+
+Some notebooks download pretrained models or language resources when
+executed. An internet connection may be required for those downloads.
+
+## Learning Outcomes
+
+By working through these experiments, you can:
+
+-   Apply text preprocessing techniques, including tokenization,
+    stemming, lemmatization, and stop-word removal.
+-   Perform part-of-speech tagging, parsing, chunking, and named entity
+    recognition.
+-   Convert text into numerical representations using BoW, TF-IDF, and
+    N-Grams.
+-   Explore word embeddings and semantic similarity techniques.
+-   Build text classification, sentiment analysis, topic modeling, and
+    opinion mining workflows.
+-   Implement information extraction and information retrieval
+    techniques.
+-   Understand sequence modeling with RNNs, LSTMs, and attention.
+-   Explore Transformer-based NLP tasks such as text generation,
+    translation, summarization, and classification.
+
+## Important Notes
+
+-   Run notebook cells in the order provided unless the notebook
+    specifies otherwise.
+-   Check each notebook for its own dataset, package, and
+    language-resource requirements.
+-   Update dataset paths to match your local environment.
+-   Some experiments use pretrained embeddings or download model weights
+    at runtime.
+-   Transformer models can require substantial RAM, GPU memory, and
+    download time.
+-   Runtime and hardware requirements depend on the model and dataset
+    used by each notebook.
 
 ## Author
 
 **Ashutosh Shukla**
 
----
+## License
 
-*This repository is intended for educational purposes and practical learning of Natural Language Processing concepts and applications.*
+These practicals are intended for educational and learning purposes. No
+specific open-source license is identified in the supplied README files.
+If you plan to distribute or encourage reuse of this repository, add an
+appropriate license file and update this section accordingly.
